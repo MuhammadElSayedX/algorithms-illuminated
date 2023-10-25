@@ -1,8 +1,8 @@
 from locks import Lock
 from adjacency_list import AdjacencyList
 from adjacency_matrix import AdjacencyMatrix
-from part_2.bfs import BFS
-from part_2.dfs import DFS
+from bfs import BFS
+from dfs import DFS
 
 
 class Graph:

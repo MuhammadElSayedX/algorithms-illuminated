@@ -1,7 +1,7 @@
 from bfs import BFS
 
 
-class UCC:
+class UndirectedConnectedComponents:
 	def __init__(self, graph):
 		self.__graph = graph
 		self.__visited = set()
