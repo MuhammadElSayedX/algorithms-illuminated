@@ -2,7 +2,9 @@ from threading import Semaphore
 
 
 class Lock:
-	# Implementation of reader-writer locks
+	"""
+	Implementation of reader-writer locks
+	"""
 	def __init__(self):
 		self.__lock = Semaphore(1)
 		self.__readers = Semaphore(1)

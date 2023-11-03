@@ -3,13 +3,13 @@ from bfs import BFS
 
 class UndirectedConnectedComponents:
 	def __init__(self, graph):
-		self.__graph = graph
-		self.__visited = set()
-		self.__ucc = []
+		self.graph = graph
+		self.visited = set()
+		self.ucc = []
 
 	def __call__(self):
-		for vertex in self.__graph.graph:
-			if vertex not in self.__visited:
-				self.__ucc.append(BFS(self.__graph)(vertex))
-				self.__visited.update(self.__ucc[-1])
-		return self.__ucc
+		for vertex in self.graph:
+			if vertex not in self.visited:
+				self.ucc.append(BFS(self.graph)(vertex))
+				self.visited.update(self.ucc[-1])
+		return self.ucc
